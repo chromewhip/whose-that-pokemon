@@ -1,0 +1,10 @@
+.header {
+    @include flex-row-nowrap;
+    width: 100%;
+
+    &__nav {
+        @include flex-row-nowrap;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,OAAO,CAAC;EDcJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,MAAM;ECdjB,KAAK,EAAE,IAAI;CAOd;;AALI,AAAD,YAAM,CAAC;EDUP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,MAAM;ECVb,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,QAAQ;CAC5B;;ACRL,AAAA,YAAY,CAAC;EAOT,gBAAgB,EAAE,qCAAqC;EACvD,oBAAoB;EACpB,gBAAgB,EAAE,OAAO;EACzB,sCAAsC;EACtC,MAAM,EAAE,KAAK;EACb,qCAAqC;EACrC,mBAAmB,EAAE,MAAM;EAC3B,sBAAsB;EACtB,iBAAiB,EAAE,SAAS;EAC5B,6BAA6B;EAC7B,eAAe,EAAE,KAAK;EAEtB,+DAA+D;CAElE;;ACrBD,AAAA,YAAY,CAAC;EHcT,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,MAAM;CGdpB",
+    "sources": [
+        "style.scss",
+        "_partials/_flex-mixins.scss",
+        "_partials/_header.scss",
+        "_partials/_whatPokemon.scss",
+        "_partials/_pokemonForm.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
