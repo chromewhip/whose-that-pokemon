@@ -19,15 +19,6 @@
   width: 100%;
 }
 
-.header .demo {
-  font-family: "Pokemon Solid" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +36,7 @@
 }
 
 .whatPokemon {
+  max-width: 100%;
   background-image: url("../assets/whoIsThatPokemon.png");
   /* The image used */
   background-color: #cccccc;
@@ -56,10 +48,31 @@
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;
-  /* Resize the background image to cover the entire container */
 }
 
-.pokemonForm {
+.whatPokemon__img {
+  height: 500px;
+  /* Add the blur effect */
+}
+
+.blurred {
+  -webkit-filter: grayscale(2);
+  /* Add the blur effect */
+  filter: blur(12px) grayscale(2);
+}
+
+.whatPokemon {
+  font-family: "Pokemon Solid";
+  color: #FFCB06;
+  font-size: 44px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 10px 0 0 #2A74B9, -2px 0 0 #2A74B9, 0 10px 0 #2A74B9, 0 -2px 0 #2A74B9, 10px 10px #2A74B9, -1px -1px 0 #2A74B9, 10px -1px 0 #2A74B9, -1px 1px 0 #2A74B9;
+}
+
+.second-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,5 +82,43 @@
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 20px;
 }
+
+.pokemon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.pokemon__header {
+  background-color: #f2eecb;
+  margin: 10px;
+  border: 5px solid black;
+}
+
+.pokemon__stats {
+  background-color: #f2eecb;
+  margin: 10px;
+  border: 5px solid black;
+}
+
+.pokemon__bio {
+  width: 100%;
+  background-color: red;
+}
+
+.pokemonForm__container {
+  background-color: #f2eecb;
+  margin: 10px;
+  border: 5px solid black;
+}
+
+/* media query for mobile */
+/* media query for tablet */
+/* media query for high pixel density desktops */
 /*# sourceMappingURL=style.css.map */

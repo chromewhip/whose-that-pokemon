@@ -3,8 +3,7 @@
     // height: 500px;
     // width: auto;
     // background-image: url("../assets/whoIsThatPokemon.png") cover no;
-
-
+    max-width: 100%;
     background-image: url("../assets/whoIsThatPokemon.png");
     /* The image used */
     background-color: #cccccc;
@@ -17,6 +16,82 @@
     /* Do not repeat the image */
     background-size: cover;
 
-    /* Resize the background image to cover the entire container */
-    &__body {}
+    &__img {
+        height: 500px;
+        // -webkit-filter: grayscale(0);
+        /* Add the blur effect */
+        // filter: blur(10px) grayscale(2);
+        // height: 400px;
+
+        // &:hover {
+        //     -webkit-filter: grayscale(1);
+        //     /* Add the blur effect */
+        //     filter: blur(0px) grayscale(0);
+        // }
+
+    }
+
+
+}
+
+.blurred {
+    -webkit-filter: grayscale(2);
+    /* Add the blur effect */
+    filter: blur(12px) grayscale(2);
+
+}
+
+.whatPokemon {
+    font-family: "Pokemon Solid";
+    color: #FFCB06;
+    font-size: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 10px 0 0 #2A74B9,
+        -2px 0 0 #2A74B9,
+        0 10px 0 #2A74B9,
+        0 -2px 0 #2A74B9,
+        10px 10px #2A74B9,
+        -1px -1px 0 #2A74B9,
+        10px -1px 0 #2A74B9,
+        -1px 1px 0 #2A74B9;
+}
+
+.second-row {
+    @include flex-row-nowrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pokemon {
+    justify-content: center;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    // width: 500px;
+
+    &__header {
+        background-color: #f2eecb;
+        margin: 10px;
+        border: 5px solid black;
+    }
+
+    &__stats {
+        background-color: #f2eecb;
+        margin: 10px;
+        border: 5px solid black;
+    }
+
+    &__bio {
+        width: 100%;
+        background-color: red;
+    }
+
+    &Form__container {
+        background-color: #f2eecb;
+        margin: 10px;
+        border: 5px solid black;
+    }
 }

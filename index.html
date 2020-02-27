@@ -11,6 +11,7 @@
 
 <body>
     <header class="header">
+
         <div class="header__logo">
 
         </div>
@@ -28,17 +29,33 @@
     <main>
         <section class="whatPokemon">
             <div class="whatPokemon__body">
-                <h2 class="whatPokemon__body-text">WHO IS THAT POKEMON?? </h2>
-                <img class="whatPokemon__img">
+                <h2 class="whatPokemon__body-text">Who is that Pokemon?</h2>
+                <img class="whatPokemon__img blurred">
             </div>
         </section>
-        <section class="pokemonForm">
-            <form class="pokemonForm__form">
-                <label></label>
-                <input class="pokemonForm__name">
-                <button class="pokemonForm__button" type="submit"></button>
-            </form>
-        </section>
+
+        <div class="second-row">
+            <section class="pokemon__bio">
+                <div class="pokemon">
+                    <div class="pokemonForm__container">
+                        <form class="pokemonForm__form" action="submit">
+                            <h2 class="pokemonForm__header">
+                                Pokemon Query:
+                            </h2>
+                            <p>Try adding a pokemon name and magically get the pokemons information!</p>
+                            <input class="pokemonForm__name">
+                            <button class="pokemonForm__button" type="submit">Submit</button>
+                        </form>
+                        <button class="randomize__pokemon">Try Another one!</button>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+        </div>
+
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
     </script>
